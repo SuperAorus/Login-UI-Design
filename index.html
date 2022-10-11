@@ -18,15 +18,15 @@
     <div class="login-card.container">
         <div class="login-card">
             <div class="login-card-logo">
-                <img src="img/logo Background Removed.png" alt="logotipo">
+                <a href="index.html"><img src="img/logo Background Removed.png" alt="logotipo"></a>
             </div>
 
             <div class="login-card-header">
-                <h1>Sign In</h1>
+                <h1>Log In</h1>
                 <div>Please login to use platform</div>
             </div>
 
-            <form class="login-card-form">
+            <form method="post" class="login-card-form">
 
                 <div class="form-item">
                     <span class="form-item-icon"> 
@@ -36,7 +36,7 @@
                         <polyline points="3 7 12 13 21 7" />
                         </svg> 
                     </span>
-                    <input type="text" placeholder="Enter Email" required autofocus>
+                    <input type="text" placeholder="Enter Email" pattern=".+@.+\.com" required autofocus>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon">
@@ -47,7 +47,7 @@
                                 <path d="M8 11v-4a4 4 0 0 1 8 0v4" />
                         </svg>                         
                     </span>
-                    <input type="password" placeholder="Enter Password" required>
+                    <input type="password" placeholder="Enter Password" pattern=".{6,}" required>
                 </div>
 
                 <div class="form-item-other">
@@ -63,7 +63,7 @@
             </form>
 
             <div class="login-card-footer">
-                Don't have a account <a href="#">Create a free account</a>.
+                Don't have a account <a href="create.html">Create a free account</a>.
             </div>
         </div>
 
